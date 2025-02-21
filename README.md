@@ -25,7 +25,7 @@ AI Powered Legal Aid Assistance is a web application that allows users to submit
 ## 🔧 Installation & Setup
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/ai-legal-aid-assistant.git
+git clone https://github.com/Shafiullah717/AI-Powered-Legal-Aid-Assistance-By-Ahsan-and-Shafiullah-.git
 
 # Navigate to the project directory
 cd ai-legal-aid-assistant
