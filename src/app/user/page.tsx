@@ -1,13 +1,18 @@
 "use client";
-
+//orignal is deployed on home page ,this is just to know the original code
 import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { LoginSignupButtons } from "@/components/ui/user-button";
+import UserButton from "@/components/ui/user-button";
 import { SessionProvider } from "next-auth/react";
-import SlidingQuotes from "@/components/slidingQuotes";
 
-const home = () => {
-  
+const user = () => {
+  const handleLogin = async () => {
+    console.log("Login button clicked - connect backend here");
+  };
+
+  const handleSignup = async () => {
+    console.log("Signup button clicked - connect backend here");
+  };
 
   useEffect(() => {
     let lastScrollY = 0;
@@ -53,15 +58,19 @@ const home = () => {
       <div className="relative w-full lg:w-1/2 h-screen bg-[#001F54] flex items-center justify-center p-6">
         <div className="text-left space-y-2 lg:space-y-4">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#FFD700] leading-tight">
-          <SlidingQuotes />
+         Wanna Legal Funda
           </h1>
-      
+          <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-[#D4AF37]">
+            for legal fraternity
+            <span className="inline-block h-4 w-4 bg-[#FFD700] rounded-full ml-1"></span>
+          </p>
         </div>
 
 {/* Scroll Down - Visible Only on Mobile */}
-<p className="text-sm text-[#D4AF37] absolute bottom-4 left-1/2 transform -translate-x-1/2 lg:hidden"> 
+<p className="text-sm text-[#D4AF37] absolute bottom-16 left-1/2 transform -translate-x-1/2 lg:hidden"> 
   scroll down<span className="blinking-dots">.</span><span className="blinking-dots">.</span><span className="blinking-dots">.</span>
 </p>
+
 
 {/* CSS */}
 <style jsx>{`
@@ -105,7 +114,7 @@ const home = () => {
 
         {/* Buttons */}
         <div className="flex flex-col gap-4 w-full max-w-sm">
-        <LoginSignupButtons />
+        <UserButton />
          
         </div>
 
@@ -128,4 +137,4 @@ const home = () => {
   );
 };
 
-export default home;
+export default user;
