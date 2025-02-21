@@ -93,8 +93,8 @@ DATABASE_URL=mongodb+srv://your_connection_string
 ![Home Page](image.png)
 
 ## 📜 License
-_(Specify your project license here, e.g., MIT)_
+_ MIT_
 
 ## 🤝 Contributors
-- **Your Name** – [GitHub](https://github.com/Shafiullah717) | [LinkedIn](https://www.linkedin.com/in/shafi-ullah-086b83284/)
+- **Shafiullah** – [GitHub](https://github.com/Shafiullah717) | [LinkedIn](https://www.linkedin.com/in/shafi-ullah-086b83284/)
 
